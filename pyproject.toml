@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sales-intelligence-platform"
+version = "0.1.0"
+description = "SQL + pandas sales analytics on a synthetic retail dataset: KPIs, RFM, cohorts, forecast backtest, HTML dashboard, Power BI CSV export"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Aymen Al Erwi" }]
+dependencies = ["numpy>=1.26", "pandas>=2.0", "scikit-learn>=1.4", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+sales-intel = "sales_intel.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sales_intel*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
