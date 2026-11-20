@@ -145,10 +145,6 @@ Tests cover generator determinism, schema constraints, SQL results vs manual com
 - Customer lifetime value estimate.
 - Load real CSV data through the same SQL schema.
 
-## Built with AI assistance
-
-This project was built with the help of an AI assistant (Claude). The code, tests and README were drafted with AI help; the numbers above are pasted from real runs of the code in this repository. Review it before relying on it.
-
 ## License
 
 MIT, see [LICENSE](LICENSE).
